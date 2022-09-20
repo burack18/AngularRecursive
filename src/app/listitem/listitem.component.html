@@ -1,0 +1,6 @@
+<p>{{data.id}}</p>
+<ul *ngIf="data.spec.options.fields">
+    <li>
+        <app-list *ngFor="let subordinate of data.spec.options.fields" [item]="subordinate"></app-list>
+    </li>
+</ul>
